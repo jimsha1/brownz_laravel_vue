@@ -1,0 +1,29 @@
+/* RTL support */
+.input-group-append {
+    margin-left: auto;
+    margin-right: -1px;
+}
+.ml-auto, .mx-auto {
+    margin-right: auto !important;
+    margin-left: initial !important;
+}
+.modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+.modal-footer > :not(:first-child) {
+    margin-left: 0;
+    margin-right: .25rem;
+}
+.mr-3, .mx-3 {
+    margin-left: 1rem !important;
+}
+.text-right{
+    text-align: left!important;
+}
+
+/* Font awesome icons flip horizontally */
+.fa-backward,
+.fa-repeat,
+.fa-undo {
+    transform:rotateY(180deg);
+}

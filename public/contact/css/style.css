@@ -1,0 +1,94 @@
+html{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    background-color: #1D1D1D;
+    font-family: "Roboto", sans-serif !important;
+}
+.brownz-form-full-container img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    
+}
+.bg-form-dark{
+    background-color:#1D1D1D;
+    padding: 60px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    overflow: scroll;
+}
+.bg-form-dark header{
+    height: max-content;
+    margin: 0;
+    width: max-content;
+}
+.bg-form-dark header a img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+.bg-form-dark input ,.bg-form-dark textarea{
+    width: 100%;
+    padding: 16px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    border-radius: 26px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    outline: none;
+    box-shadow: none;
+}
+.bg-form-dark label{
+    color: #E6CD7F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom:  15px;
+}
+.bg-form-dark form button{
+    border: none;
+    background-color: #E6CD7F;
+    padding: 16px 16px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif !important;
+    min-width: max-content;
+    margin-top: 3.5rem;
+    margin-left: auto;
+}
+@media  (max-width: 992px) {
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .brownz-form-full-container img{
+        height: 35vh;
+    }
+}
+@media (max-width: 568px){
+    .bg-form-dark{
+        padding: 50px 30px;
+        height: 100%;
+    }
+    .bg-form-dark form .row-gap-5{
+        row-gap: 2rem !important;
+    }
+
+}
+@media (max-width :400px){
+    .bg-form-dark header a img {
+        width: auto;
+        max-width: 80vw !important;
+    }
+}

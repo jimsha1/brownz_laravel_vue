@@ -1,0 +1,12 @@
+DELIMITER $$
+CREATE DEFINER=⁠ root ⁠@⁠ localhost ⁠ FUNCTION ⁠ GetClientName ⁠(client_id INT(11)) RETURNS varchar(255) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci
+    DETERMINISTIC
+BEGIN
+    DECLARE clients VARCHAR(255);
+
+    SELECT users.name AS client_name INTO clients  FROM users WHERE users.id = client_id;
+    
+    RETURN (clients);
+
+    END$$
+DELIMITER ;

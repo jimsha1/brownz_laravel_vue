@@ -1,0 +1,42 @@
+
+.voco-calendar{
+    background-color: #fff;
+    width: auto;
+    text-align: center;
+}
+
+.voco-calendar td{
+    vertical-align: middle!important;
+    padding: 0!important;
+    background-clip:padding-box;
+}
+
+.voco-calendar .vcal-day{
+    width: 70px;
+    height: 60px;
+
+    position: relative;
+}
+
+.voco-calendar .vcal-day-inactive{
+    color:#ccc;
+}
+
+.voco-calendar .today{
+    background-color: #C6C5FF;
+}
+
+.voco-calendar .holiday{
+    background-color: #FBDADA;
+    color:#DD1414;
+}
+
+.voco-calendar .ev-actions{
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+.voco-cal-col{
+    min-height: 430px;
+}

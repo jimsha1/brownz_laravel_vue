@@ -1,0 +1,28 @@
+@media (max-width: 575.98px) {
+    .form-wrapper {
+        margin-bottom: 15px;
+    }
+    .service-shop-img {
+        width: 140px;
+    }
+    .flex-reverse-column-reverse {
+        flex-direction: column-reverse;
+    }
+    /*   
+    .lg-info{
+        display: none;
+    }
+    .sm-info{
+        display: flex;
+    } */
+    .service-shop-info.sm-info .service-shop-title h4,
+    .service-shop-info .service-shop-title p {
+        color: #000;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .login-btn-mob {
+        display: block;
+    }
+}

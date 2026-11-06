@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class VendorPayment extends Model
+{
+    protected $guarded = [];
+
+    public function vendor()
+    {
+        return $this->belongsTo(Vendor::class, 'vendor_id', 'vendor_id');
+    }
+
+    public function transactionGroup()
+    {
+        return $this->belongsTo(TransactionGroup::class, 'transaction_group_id');
+    }
+}

@@ -1,0 +1,113 @@
+.service-shop-info{
+    display: block;
+    text-align: center;
+}
+.service-shop-img {
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
+    margin: auto;
+    margin-top: -50px;
+}
+.service-info-wrapper > p{
+    font-size: 25px;
+}
+.service-shop-info .service-shop-title h4, .service-shop-info .service-shop-title p{
+    padding: 0 15px;
+    color: #000;
+}
+.service-shop-title{
+    margin-bottom: 15px;
+}
+.pagination-wrapper{
+    margin-bottom: 0;
+}
+.mini-banner{
+    height: 150px;
+    padding: 0;
+}
+.service-block {
+    margin-top: -150px;
+}
+.custom-selection .fas.fa-chevron-right{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 16px;
+}
+
+.service-list-wrapper .custom-selection .fas.fa-chevron-right{
+    right: 10px
+}
+.service-info-wrapper > p{
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.btn-wrapper{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 33%);
+    padding: 15px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-wrapper a{
+    background-color: var(--primary);
+    border-color:  var(--primary);
+  
+}
+.map-wrap{
+    display: flex;
+    width: 100%;
+}
+.map-wrapper{
+    display: flex;
+    
+}
+.tab-pane .service-list-wrapper .custom-selection{
+    padding-left: 15px;
+}
+.tab-pane .service-list-wrapper.service-list-items .custom-selection{
+    padding-left: 50px;
+}
+.service-info-wrapper{
+    position: relative;
+}
+.service-info-wrapper > .fas{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.service-info-wrapper > .fas.fa-arrow-left{
+       
+    left: -25px;
+    
+}
+.service-info-wrapper >  .fas.fa-times{
+    right: 25px;
+}
+.service-info-wrapper > .fas.fa-arrow-left:hover,.service-info-wrapper >  .fas.fa-times:hover{
+    color: #dddddd;
+}
+@media (max-width: 575.98px){
+    .service-shop-img {
+        width: 75px;
+    }
+    .form-wrapper.order-wrapper{
+        margin-top: 50px;
+    }
+    .btn-wrapper{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+   
+}

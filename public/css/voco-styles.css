@@ -1,0 +1,215 @@
+/* theme overrides */
+body{
+    background-color: #f5f7fa;
+}
+.form-control::placeholder {
+    color: #babfc4 !important;
+}
+
+/* application styles */
+.breadcrumb-item + .breadcrumb-item::before{
+    content: "»";
+}
+.app-header.navbar .navbar-brand{
+    background-image: none;
+    padding: 0.75rem 1rem;
+}
+/* bootbox hack for BS4 */
+.bootbox .modal-header h4 {order: 0;}
+.bootbox .modal-header button {order: 1;}
+
+.bootbox-confirm .modal-content .modal-header,.bootbox-confirm .modal-content .modal-footer{
+    border: none;
+}
+.bootbox-confirm .modal-content .modal-body .bootbox-body{
+    font-size: 14px;
+    color: #979696;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.bootbox-confirm .modal-content .modal-footer .bootbox-cancel{
+    background-color: #E6CD7F;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-family: "Roboto", sans-serif !important;
+    min-width: max-content;
+    color: #1D1D1D !important;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: none;
+    border: none;
+}
+.bootbox-confirm .modal-content .modal-footer .bootbox-accept{
+    border: none;
+    background-color: #1D1D1D;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-family: "Roboto", sans-serif !important;
+    min-width: max-content;
+    color: #fff !important;
+    font-size: 16px;
+    box-shadow: none;
+    outline: none;
+}
+.bootbox-confirm .bootbox-close-button.close{
+    font-size: 20px;
+    color: #D0342C !important;
+    background-color: rgba(208, 52, 44, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    margin: 0;
+}
+.bootbox-confirm .bootbox-close-button.close:active,.bootbox-confirm .bootbox-close-button.close:focus,.bootbox-confirm .bootbox-close-button.close:hover{
+    border: none;
+    outline: none;
+}
+.bootbox-confirm .modal-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1D1D1D;
+    margin: 0;
+    padding: 0;
+}
+/* end application styles */
+
+/* hack for xeditable glyphicons */
+.glyphicon {display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.glyphicon-ok:before {content: "\f00c";}
+.glyphicon-remove:before{content: "\f00d";}
+/* end xeditable glyphicons */
+
+/* page styles */
+.vc-avatar{
+    border: 1px solid #dbdbdb;
+}
+.flip-h{
+    transform: scale(-1, 1);
+    display:inline-block;
+}
+
+.vc-ajax-nav-tabs .nav-link.active{
+    outline:none!important;
+}
+.form-group .invalid-feedback{
+    display: block;
+}
+.voco-check-list .form-check-input{
+    margin-left: 0;
+}
+
+/* voco gallery */
+@media (min-width: 0) {
+    .card-deck.card-gallery .card {
+        flex: 0 0 calc(100% - 30px);
+    }
+}
+@media (min-width: 576px) {
+    .card-deck.card-gallery .card {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+@media (min-width: 768px) {
+    .card-deck.card-gallery .card {
+        flex: 0 0 calc(33.3333333333% - 30px);
+    }
+}
+@media (min-width: 992px) {
+    .card-deck.card-gallery .card {
+        flex: 0 0 calc(25% - 30px);
+    }
+}
+@media (min-width: 1200px) {
+    .card-deck.card-gallery .card {
+        flex: 0 0 calc(20% - 30px);
+    }
+}
+/* end voco gallery */
+
+/* quick explainer box */
+.vcexbox{
+    position: fixed;
+    top:55px;
+    bottom:1px;
+    right: 0;
+    width: 0;
+    background:#fff; /*#f5faff; /* #f0e68c; */
+    z-index: 1060;
+}
+.vcexbox-inner{
+    border: 1px solid #bfc1c3;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.vcexbox-header{
+    position: relative;
+    background-color: #d9e7fc;
+    border-bottom: 1px solid #bfc1c3;
+    padding: 0.75rem 1.25rem;
+}
+.explainer-body{
+    padding: 20px;
+    overflow-y: auto;
+}
+.vcexbox-closable{
+    overflow:hidden;
+    margin-right:20px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.vcexbox-closable .close{
+    position:absolute;
+    top:.4rem;
+    right:.4rem;
+    font-size:2rem;
+}
+.vcexbox-title{
+    width:100%;
+}
+/* end quick explainer box */
+
+/* Circle icon with box shadow */
+.vc-icon-circle{
+    position: relative;
+    display: inline-block;
+    width: 1.75em;
+    height: 1.75em;
+    line-height: 1.75em;
+    vertical-align: middle;
+    border-radius:50%;
+    box-shadow: 0px 0px .25em #888;
+}
+.vc-icon-circle .fa{
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    line-height:inherit;
+}
+.scrollable-menu{
+    height:auto;max-height:300px;
+    overflow-x:hidden
+}
+.prof:hover{
+    border: 3px solid greenyellow;
+    background-color: #fff;
+}
+.bu-selected{
+    border: 3px solid greenyellow;
+    background-color: #fff;
+   
+}

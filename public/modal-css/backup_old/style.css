@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #B0976D;
+    --secondary: #333333;
+    --grey: #666666;
+    --grey-light: #EFEFEF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mini-banner {
+    height: 250px;
+    background-color: var(--primary);
+    padding-top: 100px;
+}
+
+.service-wrapper .service-title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.service-item h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #ffffff;
+    font-size: 45px;
+    transform: translate(-50%, -50%)
+}
+
+.service-item a.btn {
+    width: 100%;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.service-item .service-info {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    margin-top: -15px;
+    position: relative;
+}
+
+.service-item .service-info p {
+    margin: 0
+}
+
+.service-background-transparent {
+    background-color: rgba(0, 0, 0, 0.571);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-item-img {
+    height: 250px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-item-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-block {
+    margin-top: -200px;
+}
+
+.form-wrapper {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.318);
+}
+
+.form-wrapper .form-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-wrapper .form-title h5 {
+    margin: 0;
+    padding-left: 10px;
+    color: var(--primary);
+}
+
+.form-wrapper .form-group {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.form-wrapper .form-group .form-control {
+    background-color: var(--grey-light);
+    border-radius: 0;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form-wrapper .btn {
+    width: 100%;
+    background-color: var(--primary);
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.map-wrap {
+    height: 340px;
+}
+
+.service-info-wrapper>p {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.service-shop-info {
+    display: flex;
+    align-items: center;
+}
+
+.service-shop-info .service-shop-title h4,
+.service-shop-info .service-shop-title p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.service-shop-img {
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-shop-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pagination-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pagination-wrapper p,
+.pagination-wrapper h4 {
+    color: #ffffff;
+    margin: 0;
+    /* line-height: 1.0em; */
+}
+
+.pagination-wrapper p {
+    font-size: 12px;
+}
+
+.pagination-wrapper h4 {
+    font-size: 16px;
+}
+
+.tab-services .nav-tabs .nav-link {
+    border: 1px solid #333333;
+    border-radius: 10px;
+    margin: 0 5px;
+    color: #333333;
+}
+
+.tab-services .nav-link.active {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+.scrtabs-tab-container {
+    display: flex;
+    align-items: center;
+}
+
+.scrtabs-tab-scroll-arrow {
+    padding: 0;
+    font-size: 18px;
+    color: #000000;
+    height: auto;
+    border: 0;
+}
+
+
+/* The container */
+
+.custom-selection {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.custom-selection input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.custom-selection:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.custom-selection input:checked~.checkmark {
+    background-color: var(--primary);
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.custom-selection input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.custom-selection .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.service-item-list-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-item-list-info h6 span {
+    display: block;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+}
+
+.service-list-wrapper .form-wrapper {
+    padding: 0;
+}
+
+.service-item-list-info>div:last-child {
+    text-align: right;
+}
+
+.service-list-wrapper .custom-selection {
+    padding: 15px;
+    padding-left: 50px;
+    border-bottom: 1px solid #ededed;
+    margin: 0;
+}
+
+.service-list-wrapper .custom-selection .checkmark {
+    border: 1px solid var(--primary);
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    left: 6px;
+    top: 15px;
+}
+
+.custom-selection .checkmark:after {
+    left: 13px;
+    top: 6px;
+    width: 9px;
+    height: 17px;
+}
+
+.form-wrapper.order-wrapper {
+    padding: 15px 0 0 0;
+}
+
+.form-wrapper.order-wrapper ul {
+    padding: 0;
+    margin: 0;
+}
+
+.form-wrapper.order-wrapper h6 {
+    padding: 0 15px;
+}
+
+.form-wrapper.order-wrapper ul li {
+    padding: 5px 15px;
+}
+
+.form-wrapper.order-wrapper ul li {
+    list-style: none;
+}
+
+.form-wrapper.order-wrapper ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.form-wrapper.order-wrapper ul li:first-child {
+    border-top: 1px dashed #e4e4e4;
+}
+
+.form-wrapper.order-wrapper ul li:last-child {
+    border-bottom: 0;
+}
+
+.form-wrapper.order-wrapper ul li h6 {
+    padding: 0;
+    margin: 0;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.form-wrapper.order-wrapper ul li h6 span {
+    display: block;
+    font-size: 12px;
+    color: #666666;
+}
+
+.form-wrapper.order-wrapper ul li h6:last-child {
+    color: #000000;
+}
+
+.form-wrapper.order-wrapper ul li h6 i {
+    color: #CECECE;
+    cursor: pointer;
+}
+
+.form-wrapper.order-wrapper ul li h6 i:hover {
+    color: red;
+}
+
+.servic-right-click.service-list-wrapper .custom-selection {
+    padding: 15px;
+    padding-right: 50px;
+    border-bottom: 1px solid #ededed;
+    margin: 0;
+}
+
+.servic-right-click.service-list-wrapper .custom-selection .checkmark {
+    left: auto;
+    right: 6px;
+    top: 10px;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.form-wrapper.order-wrapper .btn {
+    justify-content: center;
+}
+
+.staff-img {
+    height: 50px;
+    width: 50px;
+}
+
+.staff-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.staff-items>div {
+    display: flex;
+    align-items: center;
+}
+
+.staff-items>div h6 {
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.servic-right-click.service-list-wrapper.staff-wrapper .custom-selection .checkmark {
+    top: 25px;
+}
+
+.reivew {
+    font-size: 14px;
+}
+
+.reivew i {
+    color: #FFC107;
+}
+
+.calendar-tabs h6 {
+    text-align: center;
+}
+
+.calendar-tabs ul li a span {
+    display: block;
+}
+
+.calendar-tabs .scrtabs-tab-container,
+.calendar-tabs .scrtabs-tabs-fixed-container {
+    height: 70px;
+    text-align: center;
+}
+
+.calendar-tabs .nav-tabs {
+    border: 0;
+}
+
+.payment-wrapper .custom-selection {
+    border: 0;
+}
+
+.payment-wrapper .custom-selection img {
+    max-width: 50px;
+}
+
+.form-wrapper.order-wrapper ul li h6 p {
+    margin: 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.bg-help {
+    background: #FFF6E6;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin: 15px 0
+}
+
+.bg-help p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.grand-total a {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.grand-total a.btn {
+    color: #ffffff;
+    max-width: 180px;
+}
+
+.grand-total a.btn i {
+    margin-left: 10px;
+}
+
+.service-item {
+    margin-bottom: 15px;
+}
+
+.search-wrapper .input-group-text {
+    background: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* .sm-info{
+    display: none;
+} */
+
+.sub-services {
+    display: flex;
+    padding: 15px;
+    padding-left: 8px;
+    border-bottom: 1px solid #ededed;
+    justify-content: space-between;
+    margin: 0;
+    cursor: pointer;
+}
+
+.sub-services>div {
+    display: flex;
+}
+
+.sub-services i {
+    border: 1px solid var(--primary);
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    left: 6px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.sub-services h6 {
+    margin-left: 8px;
+}
+
+.sub-services h6 span {
+    display: block;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+}
+
+.sub-service-list {
+    padding-left: 15px;
+    display: none;
+}
+
+.show-sub {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 45px;
+}
+
+footer p,
+footer a {
+    color: var(--primary);
+}
+
+
+/* 03-10-2021 */
+
+.service-pop .modal-header {
+    background: #b0976d;
+}
+
+.service-pop .modal-dialog {
+    max-width: 1000px;
+}
+
+.service-pop .pagination-wrapper p,
+.pagination-wrapper h4 {
+    color: #000000;
+}
+
+.scrtabs-tabs-fixed-container,
+.service-pop .scrtabs-tabs-movable-container {
+    width: auto !important;
+}
+
+.service-pop .scrtabs-tabs-movable-container {
+    left: 0 !important;
+}
+
+.map-wrap {
+    display: flex;
+    width: 100%;
+}
